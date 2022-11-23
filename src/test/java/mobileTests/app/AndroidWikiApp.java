@@ -84,17 +84,18 @@ public class AndroidWikiApp {
     }
 
     public void searchExisting() {
-        $(AppiumBy.accessibilityId(searchPlaceHolder)).exists();
+        step("Появилась строка поиска", () ->
+        $(AppiumBy.accessibilityId(searchPlaceHolder)).exists());
     }
 
     public void greaterThanZero() {
-        step("Verify content found", () ->
+        step("Проверяем, что иммется не менее одного результата", () ->
                 $$(AppiumBy.id(listOfResponse))
                         .shouldHave(sizeGreaterThan(0)));
     }
 
     public void findCurrentText(String request) {
-        step("", () ->
+        step("В статье содержится текст запроса", () ->
                 $$(AppiumBy.className(view)).findBy(text(request)).exists());
     }
 }

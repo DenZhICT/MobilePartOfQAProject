@@ -10,6 +10,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 
 import static com.codeborne.selenide.Selenide.*;
+import static io.qameta.allure.Allure.step;
 
 public class TestBase {
 
@@ -48,10 +49,12 @@ public class TestBase {
         String env = System.getProperty("environment");
         if (env != null && env.equals("remote")) {
             String sessionId = sessionId().toString();
-            closeWebDriver();
+            step("Закрываем драйвер", () ->
+                    closeWebDriver());
             Attach.addVideo(sessionId);
         } else {
-            closeWebDriver();
+            step("Закрываем драйвер", () ->
+                    closeWebDriver());
         }
     }
 }
