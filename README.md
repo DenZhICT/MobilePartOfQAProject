@@ -39,7 +39,7 @@
 
 ## :man_technologist: Jenkins job
 
-<a target="_blank" href="/">Сборка в Jenkins</a>
+<a target="_blank" href="https://jenkins.autotests.cloud/job/DenisZhICT_%20MobilePartOfQAProject_qa.guru14/">Сборка в Jenkins</a>
 <p align="center">
 <img src="images/screen/jenkins_job.png" alt="Jenkins"/>
 </p>
@@ -63,7 +63,7 @@ ${TEST_TYPE}
 -Denvironment=${ENVIRONMENT}
 ```
 
-## :chart_with_upwards_trend: Отчет в <a target="_blank" href="">Allure report</a>
+## :chart_with_upwards_trend: Отчет в <a target="_blank" href="https://jenkins.autotests.cloud/job/DenisZhICT_%20MobilePartOfQAProject_qa.guru14/3/allure/#">Allure report</a>
 
 ### Основное окно
 
@@ -71,7 +71,7 @@ ${TEST_TYPE}
 <img title="Allure Overview Dashboard" src="images/screen/allure_main.png">
 </p>
 
-## :bar_chart: Отчет в <a target="_blank" href="">Allure TestOps</a>
+## :bar_chart: Отчет в <a target="_blank" href="https://allure.autotests.cloud/launch/17075/tree/200989?treeId=0">Allure TestOps</a>
 
 ### Test Result Tree
 
@@ -88,5 +88,5 @@ ${TEST_TYPE}
 ## :film_strip: Пример видео о прохождении тестов
 
 <p align="center">
-<img title="Selenoid Video" src="images/gif/video1.gif" width="250" height="153"  alt="video">
+<img title="Selenoid Video" src="images/gif/video1.gif" width="1080" height="1200"  alt="video">
 </p>
