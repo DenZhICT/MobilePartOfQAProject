@@ -3,6 +3,7 @@ package mobileTests.app;
 import io.appium.java_client.AppiumBy;
 
 import static com.codeborne.selenide.CollectionCondition.sizeGreaterThan;
+import static com.codeborne.selenide.Condition.exist;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
@@ -85,7 +86,7 @@ public class AndroidWikiApp {
 
     public void searchExisting() {
         step("Появилась строка поиска", () ->
-        $(AppiumBy.accessibilityId(searchPlaceHolder)).exists());
+        $(AppiumBy.accessibilityId(searchPlaceHolder)).shouldBe(exist));
     }
 
     public void greaterThanZero() {
@@ -96,6 +97,6 @@ public class AndroidWikiApp {
 
     public void findCurrentText(String request) {
         step("В статье содержится текст запроса", () ->
-                $$(AppiumBy.className(view)).findBy(text(request)).exists());
+                $(AppiumBy.className("android.webkit.WebView")).$(AppiumBy.className("android.webkit.WebView")).shouldHave(text(request)));
     }
 }

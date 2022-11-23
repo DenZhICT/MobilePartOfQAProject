@@ -34,7 +34,7 @@ public class WikiTests extends TestBase {
                 .findCurrentText(request);
     }
 
-    @Tag("OnBoard")
+    @Tag("GetStarted")
     @DisplayName("Проверка каждой страницы первичной настройки")
     @Test
     void doNotSkippedOnBoardingTest() {
