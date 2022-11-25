@@ -1,4 +1,4 @@
-package mobileTests.helpers;
+package mobiletests.helpers;
 
 import io.qameta.allure.restassured.AllureRestAssured;
 

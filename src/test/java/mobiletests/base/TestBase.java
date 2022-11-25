@@ -1,10 +1,10 @@
-package mobileTests.base;
+package mobiletests.base;
 
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.selenide.AllureSelenide;
-import mobileTests.config.MobileLocalDriverProvider;
-import mobileTests.config.MobileRemoteDriverProvider;
-import mobileTests.helpers.Attach;
+import mobiletests.config.MobileLocalDriverProvider;
+import mobiletests.config.MobileRemoteDriverProvider;
+import mobiletests.helpers.Attach;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;

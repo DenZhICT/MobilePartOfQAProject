@@ -1,7 +1,7 @@
-package mobileTests.tests.mobileTests;
+package mobiletests.tests.mobiletests;
 
-import mobileTests.app.AndroidWikiApp;
-import mobileTests.base.TestBase;
+import mobiletests.app.AndroidWikiApp;
+import mobiletests.base.TestBase;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;

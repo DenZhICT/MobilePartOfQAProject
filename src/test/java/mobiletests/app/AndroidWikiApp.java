@@ -1,4 +1,4 @@
-package mobileTests.app;
+package mobiletests.app;
 
 import io.appium.java_client.AppiumBy;
 

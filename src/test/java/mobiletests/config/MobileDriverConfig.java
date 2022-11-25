@@ -1,4 +1,4 @@
-package mobileTests.config;
+package mobiletests.config;
 
 import org.aeonbits.owner.Config;
 

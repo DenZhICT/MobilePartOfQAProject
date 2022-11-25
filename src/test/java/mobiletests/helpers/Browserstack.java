@@ -1,6 +1,6 @@
-package mobileTests.helpers;
+package mobiletests.helpers;
 
-import mobileTests.config.MobileDriverConfig;
+import mobiletests.config.MobileDriverConfig;
 import org.aeonbits.owner.ConfigFactory;
 
 import static io.restassured.RestAssured.given;
