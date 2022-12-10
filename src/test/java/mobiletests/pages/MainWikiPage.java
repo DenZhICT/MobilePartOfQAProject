@@ -8,11 +8,11 @@ import static io.qameta.allure.Allure.step;
 
 public class MainWikiPage {
 
-    private final String inputField = "org.wikipedia.alpha:id/search_src_text",
-            searchPlaceHolder = "Search Wikipedia",
-            saved = "Saved";
+    private final String
+            searchPlaceHolder = "Search Wikipedia";
 
     public MainWikiPage searchInput(String request) {
+        String inputField = "org.wikipedia.alpha:id/search_src_text";
         step("Вставить \"" + request + "\" в строку поиска", () -> {
             $(AppiumBy.accessibilityId(searchPlaceHolder)).click();
             $(AppiumBy.id(inputField)).sendKeys(request);
@@ -22,6 +22,8 @@ public class MainWikiPage {
     }
 
     public MainWikiPage goToSaves() {
+        String saved = "Saved";
+
         step("Перейти на страницу с сохранёнными статьями", () ->
                 $(AppiumBy.accessibilityId(saved)).click());
         return this;
