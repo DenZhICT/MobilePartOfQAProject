@@ -1,4 +1,4 @@
-package mobiletests.base;
+package mobiletests.tests.mobiletests;
 
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.selenide.AllureSelenide;
@@ -16,11 +16,12 @@ public class TestBase {
 
     @BeforeAll
     static void configure() throws Exception {
-
         String env = System.getProperty("environment");
+
         if (env == null) {
             env = "local";
         }
+
         switch (env) {
             case "local":
                 new MobileLocalDriverProvider().setMobileDriverConfiguration();
