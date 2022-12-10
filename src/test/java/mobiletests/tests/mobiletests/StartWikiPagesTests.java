@@ -11,12 +11,12 @@ import org.junit.jupiter.api.Test;
 @DisplayName("Тесты для приложения Wikipedia")
 public class StartWikiPagesTests extends TestBase{
 
-    StartWikiPage startPage = new StartWikiPage();
-    MainWikiPage mainPage = new MainWikiPage();
-
     @DisplayName("Проверка каждой страницы первичной настройки")
     @Test
     void doNotSkippedOnBoardingTest() {
+        StartWikiPage startPage = new StartWikiPage();
+        MainWikiPage mainPage = new MainWikiPage();
+
         startPage
                 .checkPrimary("The Free Encyclopedia\n…in over 300 languages")
                 .nextSlide()

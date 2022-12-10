@@ -12,13 +12,13 @@ import org.junit.jupiter.api.Test;
 @DisplayName("Тесты для приложения Wikipedia")
 public class SaveWikiTests extends TestBase{
 
-    StartWikiPage startPage = new StartWikiPage();
-    MainWikiPage mainPage = new MainWikiPage();
-    SaveWikiPage savePage = new SaveWikiPage();
-
     @DisplayName("Проверка пустотности сохранённых статей")
     @Test
     void emptySavesEmpty() {
+        StartWikiPage startPage = new StartWikiPage();
+        MainWikiPage mainPage = new MainWikiPage();
+        SaveWikiPage savePage = new SaveWikiPage();
+
         startPage
                 .skipLanguage();
         mainPage
