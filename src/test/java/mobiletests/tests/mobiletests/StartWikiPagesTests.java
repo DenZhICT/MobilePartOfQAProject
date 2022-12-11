@@ -26,7 +26,6 @@ public class StartWikiPagesTests extends TestBase{
                 .nextSlide()
                 .checkPrimary("Send anonymous data")
                 .finalSlide();
-        mainPage
-                .searchExisting();
+        mainPage.searchExisting();
     }
 }

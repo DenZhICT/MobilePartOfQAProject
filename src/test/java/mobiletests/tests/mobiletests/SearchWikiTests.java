@@ -20,21 +20,16 @@ public class SearchWikiTests extends TestBase{
     @DisplayName("Проверка, что поиск выдаёт хотя бы одну статью по запросу")
     @Test
     void searchTest() {
-        startPage
-                .skipLanguage();
-        mainPage
-                .searchInput(request);
-        searchPage
-                .greaterThanZero();
+        startPage.skipLanguage();
+        mainPage.searchInput(request);
+        searchPage.greaterThanZero();
     }
 
     @DisplayName("Проверка того, что первая выводимая статья та, что нужна по запросу")
     @Test
     void searchArticleTest() {
-        startPage
-                .skipLanguage();
-        mainPage
-                .searchInput(request);
+        startPage.skipLanguage();
+        mainPage.searchInput(request);
         searchPage
                 .chooseFirst()
                 .findCurrentText(request);

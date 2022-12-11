@@ -19,10 +19,8 @@ public class SaveWikiTests extends TestBase{
         MainWikiPage mainPage = new MainWikiPage();
         SaveWikiPage savePage = new SaveWikiPage();
 
-        startPage
-                .skipLanguage();
-        mainPage
-                .goToSaves();
+        startPage.skipLanguage();
+        mainPage.goToSaves();
         savePage
                 .tapNegativeButton()
                 .checkEmptiness();
